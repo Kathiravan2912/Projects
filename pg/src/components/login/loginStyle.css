@@ -1,0 +1,125 @@
+
+.login-page{
+    background-color: darkblue;
+    height: 775px;
+}
+.header-content{
+    background-color: #fff200;
+}
+.header-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    justify-self: center;
+}
+.header-name>h3{
+    align-content: center;
+    justify-content: center;
+}
+
+.line{
+    height: 2px;
+    color: yellow;
+    margin-left: -2%;
+    width: 102%;
+    text-align:start ;
+}
+
+.back-btn{
+    background-color: #fff200;
+    color: darkblue;
+    border: none;
+    outline: none;
+    margin-left: 1px;
+    margin-top: 1px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 10px 29px;
+}
+
+.back-btn:hover{
+    cursor: pointer;
+    border: none;
+    box-shadow: 1PX 1PX 43PX 5PX #fff200;
+}
+.auth-container {
+    max-width: 400px;
+    background-color: #fff200;
+    margin-top: 5%;
+    margin-left: 34%;
+    padding:50px 30px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 35px 2px #fff200;
+  }
+  
+  .auth-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  input[type='email'],
+  input[type='password'],
+  input[type='text'] {
+    width: 94%;
+    padding:5px 10px;
+    margin: 5px 0;
+    border-radius: 14px;
+    border: 1px solid #ccc;
+  }
+  
+  .login-btn {
+    width: 98%;
+    margin-left: 2px;
+    padding: 10px;
+    margin-top: 4%;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .login-btn:hover {
+    transition-duration: 0.2s;
+    box-shadow: 2px 2px 32px 4px darkblue;
+    color: #fff200;
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+  }
+
+.new-to-this{
+    margin-top: 10%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: small;
+}
+.signup-navigate{
+    color: blue;
+}
+.signup-navigate:hover{
+    transition-duration: 0.2s;
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+  
+  @media (max-width: 600px) {
+    .auth-container {
+      width: 90%;
+      padding: 10px;
+    }
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }

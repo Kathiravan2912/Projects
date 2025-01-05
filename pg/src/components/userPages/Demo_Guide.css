@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Container */
+  .demo-guide-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff200;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #333;
+  }
+  
+  /* Header */
+  .guide-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .guide-header h1 {
+    color: darkblue;
+    font-size: 2.5rem;
+  }
+  
+  .guide-header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  /* Sections */
+  .guide-section, .tips-section {
+    margin: 20px 0;
+  }
+  
+  .guide-section h2,
+  .tips-section h2 {
+    color: darkblue;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .steps-list {
+    list-style-type: decimal;
+    padding-left: 20px;
+  }
+  
+  .steps-list li {
+    margin-bottom: 25px;
+  }
+  
+  .steps-list h3 {
+    color: #333;
+    font-size: 1.5rem;
+  }
+  
+  .steps-list p {
+    margin: 10px 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  .demo-video {
+    width: 100%;
+    max-width: 600px;
+    border: 3px solid darkblue;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Pro Tips */
+  .tips-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .tips-section li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  /* Footer */
+  .guide-footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1rem;
+  }
+  
+  .guide-footer a {
+    color: darkblue;
+    text-decoration: none;
+  }
+  
+  .guide-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .guide-header h1 {
+      font-size: 2rem;
+    }
+  
+    .steps-list h3 {
+      font-size: 1.3rem;
+    }
+  
+    .demo-video {
+      max-width: 100%;
+    }
+  }
+  

@@ -1,0 +1,209 @@
+.expenses-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .Start-date, .End-date{
+    border: solid darkblue 2px;
+  }
+  
+  .filter-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 14px;
+  }
+  
+  input[type="date"] {
+    padding: 5px;
+    margin-left: 5px;
+  }
+  
+  .add-expense-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .add-expense-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-content {
+    background: darkblue;
+    color: #fff200;
+    padding: 40px;
+    border-radius: 10px;
+    width: 350px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .close-button-expense {
+    color: red;
+    position: absolute;
+    top: -14px;
+    right: -10px;
+    background: none;
+    border: none;
+    font-size: 46px;
+    cursor: pointer;
+  }
+
+  .expense-category {
+    width: 100%;
+    padding: 15px 8px;
+    margin-bottom:20px;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+  }
+  .save-expense-button {
+    background-color: #fff200;
+    color: darkblue;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .expense-amount{
+    width: 96%;
+    padding: 5px 8px;
+    margin-bottom:20px;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+  }
+
+  .expense-name {
+    width: 102%;
+    padding:12px 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+  }
+  
+  .save-expense-button:hover {
+    box-shadow: 1px 1px 12px 2px#fff200;
+  }
+  
+  .expenses-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  
+  .expenses-table th{
+    border: #000000 solid 2px;
+    background-color: darkblue;
+    color: #fff200;
+    padding: 8px;
+    text-align: center;
+  }
+  .expenses-table td {
+    border: 1px solid #ddd;
+    border: #000000 solid 2px;
+    padding: 8px;
+    text-align:center;
+  }
+  
+  .expenses-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+ .expense-edit-btn{
+    background-color: blue;
+    color: white;
+    border-radius: 9px;
+    border: none;
+  }
+
+  .expense-delete-btn{
+    background-color: red;
+    color: white;
+    border-radius: 9px;
+    border: none;
+  }
+  
+
+  /* confirmation box */
+
+  .confirmation-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .confirmation-dialog {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+
+  .confirmation-topic{
+    margin-top: 3%;
+  }
+  
+  .confirmation-buttons {
+    margin-top: 20px;
+  }
+  
+  .confirm-delete-button {
+    background-color: red; /* Red color for delete confirmation */
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .cancel-delete-button {
+    background-color: #0bc111; /* Green color for canceling delete */
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .confirm-delete-button:hover{
+    box-shadow: 1px 1px 12px 1px red;
+  }
+  .cancel-delete-button:hover {
+    box-shadow: 1px 1px 12px 1px #0bc111;
+  }
+  
