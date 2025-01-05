@@ -1,0 +1,305 @@
+/* Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+
+header {
+  background: #919191;
+  color: white;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+header .nav {
+  padding: 20px 20px;
+}
+
+header .nav a {
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 20px;
+  transition-duration: 0.3s;
+}
+
+header .nav a:hover {
+  box-shadow: 1px 1px 12px 2px red;
+}
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+section h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+section p {
+  font-size: 1.2em;
+  color: #666;
+} */
+
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f4f4f4;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #222;
+  color: white;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .nav {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+header .nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  transition-duration: 0.3s;
+}
+
+header .nav a:hover {
+  box-shadow: 1px 1px 14px 2px white;
+  border-radius: 7px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-left: 7%;
+  color: #222;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  margin-left: 7%;
+  color: #555;
+}
+
+.hero-image {
+  width: 118%;
+  max-width: 45%;
+  border-radius: 10px;
+}
+
+/* About Us */
+.about-us {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+}
+
+.about-image {
+  max-width: 50%;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+/* Products and Services */
+.products-services {
+  text-align: center;
+  padding: 20px;
+  background: #e9ecef;
+}
+
+.products-services button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #000000;
+  border-radius: 7px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.products-services button:hover {
+  box-shadow: 1px 1px 15px 2px black;
+}
+
+/* Additional Details */
+.additional-details {
+  display: none;
+  padding: 20px;
+  background: #fff;
+}
+
+.additional-details .vehicle-grid {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.additional-details .vehicle-card {
+  flex: 1;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.additional-details .vehicle-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #222;
+  color: white;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+header .nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+header .nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+header .nav a:hover {
+  text-decoration: underline;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  width: 450px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card:hover{
+  transition-duration: 0.3s;
+  box-shadow: 1px 1px 15px 2px black;
+  transform: scale(1.02);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.card-content p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.card-content .price {
+  color: #008000;
+  font-weight: bold;
+}
+
+.card-content button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.card-content button:hover {
+  background-color: #0056b3;
+}
+
+.hidden {
+  display: none;
+}
