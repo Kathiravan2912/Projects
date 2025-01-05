@@ -1,0 +1,6 @@
+.sidebar ul li.active {
+    background-color: #fff200;
+    border-color: #ffffff;
+    color: darkblue;
+    text-decoration: none;
+  }

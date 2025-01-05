@@ -1,0 +1,272 @@
+/* navbar */
+* {
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.body {
+  background: rgb(3,74,156);
+  background: linear-gradient(90deg, rgba(3,74,156,1) 0%, rgba(9,9,121,1) 37%, rgba(10,5,93,1) 77%);
+}
+
+.line {
+  height: 2px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.navbar {
+  display: flex;
+  padding: 7px 17px;
+  background: #fff200;
+  box-shadow: 1px 2px 30px 3px rgb(197, 190, 132);
+  color: black;
+  z-index: 5;
+  width: 98%;
+  position: fixed;
+}
+
+.logo {
+  width: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 2%;
+}
+
+.company-name {
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-right {
+  margin-left: 48%;
+}
+
+.nav-link {
+  position: relative;
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px 10px 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: #000000;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 90%;
+}
+
+.nav-link:hover {
+  color: #000000;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+.login-btn-nav {
+  padding: 8px 16px;
+  font-size: 16px;
+  height: 40px;
+  width: 150px;
+  padding: 5px 10px;
+  border: none;
+  background-color: darkblue;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  transition-duration: 0.3s;
+}
+
+.login-btn-nav:hover {
+  cursor: pointer;
+  background-color: darkblue;
+  box-shadow: 2px 2px 15px 6px darkblue;
+  transition-duration: 0.3s;
+  color: rgb(255, 255, 255);
+}
+
+/* Heading */
+
+.heading {
+  margin-top: 2%;
+  text-align: center;
+  color: #fff200;
+  font-size: 31px;
+  text-decoration: underline;
+}
+
+/* about */
+.head {
+  /* margin-top: 3%; */
+  font-size: 30px;
+  color: #ffffff;
+  padding: 25px;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.about-description {
+  letter-spacing: 1px;
+  margin: 1% 7%;
+  font-size: 21px;
+  text-align: center;
+  color: #fff200;
+  text-align: justify;
+}
+
+/* Advantages */
+.advantages-grid-odd {
+  display: grid;
+  grid-template-columns: 1.7fr 3fr;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 280px;
+}
+.advantage-image-odd {
+  display: grid;
+  background-color: #fff200;
+  align-content: center;
+  justify-content: center;
+}
+.advantage-point-odd {
+  display: grid;
+  font-size: 25px;
+  color: #fff200;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+.advantages-grid-even {
+  display: grid;
+  grid-template-columns: 3fr 1.7fr;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 270px;
+}
+.advantage-image-even {
+  display: grid;
+  background-color: #fff200;
+  align-content: center;
+  justify-content: center;
+}
+.advantage-point-even {
+  display: grid;
+  font-size: 25px;
+  color: #fff200;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+/* steps */
+
+.down-arrow img {
+  display: grid;
+  height: 60px;
+  align-content: center;
+}
+.step {
+  margin: 2% 30%;
+  font-size: 25px;
+  background-color: rgb(252, 252, 252) !important;
+  border: solid #fff200 4px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* contact */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.contact-left,
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-left > p{
+  margin-top: 5px;
+  color: #fff200;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 5px;
+  color: #fff200;
+}
+
+.contact-data {
+  display: grid;
+}
+
+input {
+  height: 40px;
+  width: 90%;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 25px;
+}
+input:focus {
+  border: solid #fff200 3px;
+}
+
+.send-btn {
+  width: 30%;
+  height: 50px;
+  margin-left: 32%;
+  margin-top: 9px;
+  border-radius: 5px;
+  border: none;
+  color: darkblue;
+  background-color: #fff200;
+  transition-duration: 0.2s;
+}
+
+.send-btn:hover {
+  background-color: #fff200;
+  color: darkblue;
+  cursor: pointer;
+  box-shadow: 1px 1px 63px 3px #fff200;
+}
+
+.icons:hover {
+  transition-duration: 0.2s;
+  cursor: pointer;
+  box-shadow: 1px 10px 63px 18px #fff200;
+}
+
+.footer {
+  margin-top: 2%;
+  text-align: center;
+  background-color: #fff200;
+  color: darkblue;
+  padding: 22px 10px;
+}

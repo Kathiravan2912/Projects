@@ -1,0 +1,67 @@
+/* General Container */
+.data-visualization-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+  }
+  
+  /* Section Styling */
+  .chart-section {
+    margin-bottom: 40px;
+  }
+  
+  .chart-section h2 {
+    text-align: center;
+    color: darkblue;
+    margin-bottom: 20px;
+  }
+  
+  /* Selector Styling */
+  .selector {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .selector label {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .selector select {
+    padding: 8px 10px;
+    font-size: 16px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+    background-color: #fff200;
+    color: darkblue;
+  }
+  
+  .selector select:focus {
+    outline: none;
+    border-color: #3333aa;
+  }
+  
+  /* Chart Styling */
+  canvas {
+    max-width: 100%;
+    color: white;
+    height: auto !important;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .chart-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .selector select {
+      font-size: 14px;
+      padding: 6px 8px;
+    }
+  }
+  
